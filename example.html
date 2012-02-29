@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Jazzle Example</title>
+		
+		<link href="example.css" rel="stylesheet">
+		
+		<script src="jquery-1.7.1.min.js"></script>
+		<script src="jquery-jazzle.js"></script>
+		
+		<script>
+			$(function(){
+				
+				$('#basic a').jazzleLight();
+				
+				$('#advanced a').jazzleLight({
+					color: '#FFF',
+					opacity: 0.75,
+					size: '100px',
+					top: '90%',
+					fadeInStart: function(){
+						$(this).stop().animate({
+							'font-size': '35px'
+						}, 250);
+					},
+					fadeOutStart: function(){
+						$(this).stop().animate({
+							'font-size': '20px'
+						}, 250);
+					}
+				})
+				
+			});
+		</script>
+		
+	</head>
+	<body>
+	
+		<div id="basic">
+			<a href="#">Lorem</a>
+			<a href="#">Ipsum</a>
+			<a href="#">Dolor</a>
+			<a href="#">Sit</a>
+			<a href="#">Amet</a>
+		</div>
+		
+		<div id="advanced">
+			<a href="#">Lorem</a>
+			<a href="#">Ipsum</a>
+			<a href="#">Dolor</a>
+			<a href="#">Sit</a>
+			<a href="#">Amet</a>
+		</div>
+	
+	</body>
+</html>
