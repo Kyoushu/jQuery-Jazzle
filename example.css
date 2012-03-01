@@ -3,6 +3,7 @@ body{
 	font-size: 14px;
 	margin: 30px;
 	background: #000000;
+	background: rgb(20, 20, 60);
 }
 
 #basic a{
@@ -36,7 +37,9 @@ body{
 	background: #25722B;
 	color: rgb(220,220,220);
 	text-shadow: 0 1px 0 rgb(0, 0, 0);
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+	box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.5);
+	border
 	display: block;
 	float: left;
+	border: solid 1px rgba(0,0,0,128);
 }
